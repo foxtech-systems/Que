@@ -22,9 +22,39 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Actions\ActionBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\DelayAction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\ReleaseAction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Actions\SeizeAction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\AttributeBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\CreateTimeAttribute.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\WaitCostAttribute.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Attributes\WaitTimeAttribute.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DistributionExpression.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Distributions\ConstantDistribution.py" />
     <Compile Include="Distributions\DistributionBase.py" />
     <Compile Include="Distributions\ExponentialDistribution.py" />
+    <Compile Include="Distributions\ScheduleDistribution.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Distributions\UniformDistribution.py" />
     <Compile Include="Modules\AdvancedModules\AdjustVariableModule.py" />
     <Compile Include="Modules\AdvancedModules\DelayModule.py" />
@@ -50,12 +80,34 @@
     <Compile Include="Modules\BasicModules\SeparateModule.py" />
     <Compile Include="Modules\ModuleBase.py" />
     <Compile Include="Que.Common.py" />
+    <Compile Include="Rules\FirstInFirstOutRule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\HighestAttributeValueRule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\LastInFirstOutRule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\LowestAttributeValueRule.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Rules\RuleBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\TopologyBase.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Distributions\" />
     <Folder Include="Modules\" />
     <Folder Include="Modules\AdvancedModules\" />
     <Folder Include="Modules\BasicModules\" />
+    <Folder Include="Attributes\" />
+    <Folder Include="Actions\" />
+    <Folder Include="Topology\" />
+    <Folder Include="Rules\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

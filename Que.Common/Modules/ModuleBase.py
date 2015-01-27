@@ -1,3 +1,4 @@
 import DistributionBase
-class Creator(object):
-    BaseDistribution
+class ModuleBase(object):
+    Name = ""
+    EntityType = ""
