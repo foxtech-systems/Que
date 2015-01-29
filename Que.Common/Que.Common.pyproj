@@ -5,13 +5,15 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>74911d3b-cc03-4e9b-b7a4-a943eb2c2252</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Que.Common.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>Actions\;Processes\;Processes\BasicProcesses\;Topology\;Topology\Lines\;Topology\Nodes\;Topology\Pins\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Que.Common</Name>
     <RootNamespace>Que.Common</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -46,9 +48,6 @@
     <Compile Include="Attributes\WaitTimeAttribute.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DistributionExpression.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Distributions\ConstantDistribution.py" />
     <Compile Include="Distributions\DistributionBase.py" />
     <Compile Include="Distributions\ExponentialDistribution.py" />
@@ -56,30 +55,44 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Distributions\UniformDistribution.py" />
-    <Compile Include="Modules\AdvancedModules\AdjustVariableModule.py" />
-    <Compile Include="Modules\AdvancedModules\DelayModule.py" />
-    <Compile Include="Modules\AdvancedModules\DropoffModule.py" />
-    <Compile Include="Modules\AdvancedModules\HoldModule.py" />
-    <Compile Include="Modules\AdvancedModules\MatchModule.py" />
-    <Compile Include="Modules\AdvancedModules\PickupModule.py" />
-    <Compile Include="Modules\AdvancedModules\ReadWriteModule.py" />
-    <Compile Include="Modules\AdvancedModules\ReleaseModule.py" />
-    <Compile Include="Modules\AdvancedModules\RemoveModule.py" />
-    <Compile Include="Modules\AdvancedModules\SearchModule.py" />
-    <Compile Include="Modules\AdvancedModules\SeizeModule.py" />
-    <Compile Include="Modules\AdvancedModules\SignalModule.py" />
-    <Compile Include="Modules\AdvancedModules\StoreModule.py" />
-    <Compile Include="Modules\AdvancedModules\UnstoreModule.py" />
-    <Compile Include="Modules\BasicModules\AssignModule.py" />
-    <Compile Include="Modules\BasicModules\BatchModule.py" />
-    <Compile Include="Modules\BasicModules\CreateModule.py" />
-    <Compile Include="Modules\BasicModules\DecideModule.py" />
-    <Compile Include="Modules\BasicModules\DisposeModule.py" />
-    <Compile Include="Modules\BasicModules\ProcessModule.py" />
-    <Compile Include="Modules\BasicModules\RecordModule.py" />
-    <Compile Include="Modules\BasicModules\SeparateModule.py" />
-    <Compile Include="Modules\ModuleBase.py" />
-    <Compile Include="Que.Common.py" />
+    <Compile Include="Entity.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\AdvancedProcesses\AdjustVariableModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\DelayModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\DropoffModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\HoldModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\MatchModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\PickupModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\ReadWriteModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\ReleaseModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\RemoveModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\SearchModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\SeizeModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\SignalModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\StoreModule.py" />
+    <Compile Include="Processes\AdvancedProcesses\UnstoreModule.py" />
+    <Compile Include="Processes\BasicProcesses\Assign.py" />
+    <Compile Include="Processes\BasicProcesses\Batch.py" />
+    <Compile Include="Processes\BasicProcesses\CreateProcess.py" />
+    <Compile Include="Processes\BasicProcesses\DecideModule.py" />
+    <Compile Include="Processes\BasicProcesses\DisposeProcess.py" />
+    <Compile Include="Processes\BasicProcesses\QueueProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\BasicProcesses\ServiceProcess.py" />
+    <Compile Include="Processes\BasicProcesses\RecordModule.py" />
+    <Compile Include="Processes\BasicProcesses\SeparateModule.py" />
+    <Compile Include="Processes\EndProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\MiddleProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Processes\ProcessBase.py" />
+    <Compile Include="Processes\StartProcess.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Rules\FirstInFirstOutRule.py">
       <SubType>Code</SubType>
     </Compile>
@@ -95,19 +108,58 @@
     <Compile Include="Rules\RuleBase.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Module.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Lines\DirectedLine.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Lines\LineBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Nodes\EndNode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Nodes\MiddleNode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Nodes\NodeBase.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Nodes\QueueNode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Nodes\StartNode.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Pins\InputPin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Pins\OutputPin.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Topology\Pins\PinBase.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="Topology\TopologyBase.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Distributions\" />
-    <Folder Include="Modules\" />
-    <Folder Include="Modules\AdvancedModules\" />
-    <Folder Include="Modules\BasicModules\" />
+    <Folder Include="Processes\" />
+    <Folder Include="Processes\AdvancedProcesses\" />
+    <Folder Include="Processes\BasicProcesses\" />
     <Folder Include="Attributes\" />
     <Folder Include="Actions\" />
     <Folder Include="Topology\" />
     <Folder Include="Rules\" />
+    <Folder Include="Topology\Lines\" />
+    <Folder Include="Topology\Pins\" />
+    <Folder Include="Topology\Nodes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

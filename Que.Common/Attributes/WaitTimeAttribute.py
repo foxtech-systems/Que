@@ -1,4 +1,4 @@
-class WaitTimeAttribute(object):
-    """description of class"""
+#class WaitTimeAttribute(object):
+#    """description of class"""
 
 

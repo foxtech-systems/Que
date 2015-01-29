@@ -1,4 +1,4 @@
-class CreateTimeAttribute(object):
-    """description of class"""
+#class CreateTimeAttribute(object):
+#    """description of class"""
 
 

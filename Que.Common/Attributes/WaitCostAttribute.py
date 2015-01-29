@@ -1,4 +1,4 @@
-class WaitCostAttribute(object):
-    """description of class"""
+#class WaitCostAttribute(object):
+#    """description of class"""
 
 

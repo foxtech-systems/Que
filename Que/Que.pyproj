@@ -6,12 +6,13 @@
     <ProjectGuid>b355f285-1cda-4139-9f7a-59c115d5dd38</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>Que.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>..\Que.Common\;..\Que.Common\Topology\;..\Que.Common\Rules\;..\Que.Common\Processes\;..\Que.Common\Topology\Lines\;..\Que.Common\Topology\Nodes\;..\Que.Common\Topology\Pins\;..\Que.Common\Processes\BasicProcesses\</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>Que</Name>
     <RootNamespace>Que</RootNamespace>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +24,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Que.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.4" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

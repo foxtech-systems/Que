@@ -1,5 +1,5 @@
-import DistributionBase
-class ScheduleDistribution(DistributionBase):
-    """description of class"""
+#import DistributionBase
+#class ScheduleDistribution(DistributionBase):
+#    """description of class"""
 
 

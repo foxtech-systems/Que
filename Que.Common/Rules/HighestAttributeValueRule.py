@@ -1,5 +1,5 @@
-import RuleBase
-class HighestAttributeValueRule(RuleBase):
-    """description of class"""
+#import RuleBase
+#class HighestAttributeValueRule(RuleBase):
+#    """description of class"""
 
 

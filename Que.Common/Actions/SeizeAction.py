@@ -1,4 +1,4 @@
-class SeizeAction(object):
-    """description of class"""
+#class SeizeAction(object):
+#    """description of class"""
 
 

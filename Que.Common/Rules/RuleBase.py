@@ -1,4 +1,4 @@
-class RuleBase(object):
-    """description of class"""
+#class RuleBase(object):
+#    """description of class"""
 
 

@@ -1,5 +1,5 @@
-import DistributionBase
-class UniformDistribution(DistributionBase):
-    """平均分布"""
+#import DistributionBase
+#class UniformDistribution(DistributionBase):
+#    """ """
 
 

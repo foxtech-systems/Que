@@ -1,5 +1,5 @@
-import DistributionBase
-class ConstantDistribution(DistributionBase):
-    """常数分布"""
+#import DistributionBase
+#class ConstantDistribution(DistributionBase):
+#    """ """
 
 

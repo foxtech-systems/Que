@@ -1,5 +1,5 @@
-import RuleBase
-class LowestAttributeValueRule(RuleBase):
-    """description of class"""
+#import RuleBase
+#class LowestAttributeValueRule(RuleBase):
+#    """description of class"""
 
 

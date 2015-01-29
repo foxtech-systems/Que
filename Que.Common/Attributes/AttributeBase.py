@@ -1,4 +1,4 @@
-class AttributeBase(object):
-    """description of class"""
+#class AttributeBase(object):
+#    """description of class"""
 
 

@@ -1,4 +1,2 @@
 class TopologyBase(object):
-    """description of class"""
-
-
+    """TopologyBase is the base of all kinds of topology"""

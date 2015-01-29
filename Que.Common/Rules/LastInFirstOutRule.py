@@ -1,5 +1,5 @@
-import RuleBase
-class LastInFirstOutRule(RuleBase):
-    """description of class"""
+#import RuleBase
+#class LastInFirstOutRule(RuleBase):
+#    """description of class"""
 
 
